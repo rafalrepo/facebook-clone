@@ -4,34 +4,36 @@ import Header from './components/Header';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
+import SiedbarHomeLeft from './components/SiedbarHomeLeft';
 
 
 function App() {
   return (
     <Router>
-      <Switch>
         <div className="App">
           <Header />
-          <Route exact path="/">
-            strona główna
-          </Route>
-          <Route path="/friends">
-            friends
-          </Route>
-          <Route path="/watch">
-            watch
-          </Route>
-          <Route path="/market">
-            market
-          </Route>
-          <Route path="/group">
-            group
-          </Route>
+            <div className="wrapper">
+              <Switch>
+                <Route exact path="/">
+                    <SiedbarHomeLeft />
+                </Route>
+                <Route path="/friends">
+                  friends
+                </Route>
+                <Route path="/watch">
+                  watch
+                </Route>
+                <Route path="/market">
+                  market
+                </Route>
+                <Route path="/group">
+                  group
+                </Route>
+              </Switch>
+            </div>
         </div>
-      </Switch>
     </Router>
   );
 }

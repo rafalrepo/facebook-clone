@@ -22,7 +22,7 @@ const Header = () => {
     return(
         <header className="header">
             <div className="header__search">
-                <img src={logo} alt="facebook-clone"/>
+                <img src={logo} alt="facebook-clone" className="header__Logo"/>
                 <form>
                     <input type="text" placeholder="Szukaj na Facebooku"/>
                 </form>

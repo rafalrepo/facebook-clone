@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/headerNavItem.css';
 import { Link, useLocation } from 'react-router-dom';
 
-const HeaderNavItem = (props) => {
+const HeaderNavItem = () => {
 
     const location = useLocation();
 
