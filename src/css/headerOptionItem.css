@@ -1,0 +1,35 @@
+.headerOptionItem {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3a3b3c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    border: 0;
+    outline: none;
+}
+
+.headerOptionItem:hover {
+    background-color: #4e4f50;
+}
+
+.headerOptionItem__iconSvg {
+    fill: #e4e6eb !important;
+    margin-top: 3px;
+}
+
+.headerOptionItem__iconFa {
+    color: #e4e6eb !important;
+    font-size: 18px;
+}
+
+.headerOptionItem__iconFa--create{
+    transform: translateY(3px);
+}
+
+.headerOptionItem__iconFa--account{
+    transform: translateY(-2px);
+}
