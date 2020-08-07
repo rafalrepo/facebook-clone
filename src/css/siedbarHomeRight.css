@@ -1,0 +1,13 @@
+.siedbarHomeRight {
+    flex: 0.2;
+    padding: 0 10px;
+}
+
+.siedbarHomeRight h3 {
+    color: #b0b3b8;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    padding-left: 8px;
+    margin: 20px 0 10px;
+}

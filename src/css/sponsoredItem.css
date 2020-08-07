@@ -1,0 +1,67 @@
+.sponsor {
+    position: relative;
+    display: block;
+    width: 286px;
+    padding: 8px 30px 8px 8px;
+}
+
+.sponsor:hover {
+    background-color: #303031;
+    border-radius: 5px;
+}
+
+.sponsor:hover .sponsor__more{
+    display: block;
+}
+
+.sponsor__item   {
+    text-decoration: none;
+}
+
+.sponsor__item h4{
+    font-weight: 600;
+    font-size: 15px;
+    color: #e4e6eb;
+}
+
+.sponsor__item p{
+    font-weight: 300;
+    font-size: 13px;
+    color: #e4e6eb;
+    padding: 5px 0;
+}
+
+.sponsor__item img{
+    width: 70px;
+    border-radius: 5px;
+}
+
+.sponsor__more {
+    display: none;
+    outline: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    background-color: #3a3b3c;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.sponsor__more:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    display: block;
+    background-color: #4e4f50;
+}
+
+.sponsor ~ .sponsor__more:hover {
+    background-color: none !important;
+}
+
+.sponsor__more i{
+    color: #797b7e;
+    font-size: 16px;
+}

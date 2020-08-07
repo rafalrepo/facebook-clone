@@ -1,6 +1,7 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import '../css/siedbarHomeLeft.css';
-import SiedbarHomeLink from './SiedbarHomeLink'
+import SiedbarHomeLink from './SiedbarHomeLink';
+import { Link } from 'react-router-dom';
 
 const SiedbarHomeLeft = () => {
 
@@ -134,7 +135,7 @@ const SiedbarHomeLeft = () => {
             }
         ]
 
-        const shortcuts = [
+    const shortcuts = [
             {
                 'src': 'https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-0/cp0/c0.0.50.50a/p50x50/106387698_3231081856914295_4289629399641721905_n.jpg?_nc_cat=108&_nc_sid=ca434c&_nc_ohc=Wek0eXCLutQAX8DFB6I&_nc_ht=scontent-waw1-1.xx&oh=2ae62b40f9b52f5d4b157925d70df2f9&oe=5F53C66C',
                 'text': 'Hearthstone Polska',
@@ -152,19 +153,46 @@ const SiedbarHomeLeft = () => {
         ]    
 
     return(
-        <div className="SiedbarHomeLeft">
+        <div className="SiedbarHomeLeft SiedbarHomeLeft--scrollBar">
             {links.map((map, index) => 
-                (!tSiedbar ? index < 7 ? <SiedbarHomeLink src={map.src} text={map.text} /> : ''  : <SiedbarHomeLink src={map.src} text={map.text} />)
+                (!tSiedbar ? index < 7 ? <SiedbarHomeLink key={index} src={map.src} text={map.text} /> : ''  : <SiedbarHomeLink key={index} src={map.src} text={map.text} />)
             )}
             <button className="siedbarHomeLink siedbarHomeLink--button" 
                     onClick={(e) => setTSiedbar(!tSiedbar)}
-                >{!tSiedbar ? <><div className="siedbarHomeLink__faContent"><i class="fa fa-chevron-down"></i></div> Zobacz więcej </>
-                            : <><div className="siedbarHomeLink__faContent"><i class="fa fa-chevron-up"></i></div> Pokaż mniej</>}</button>
+                >{!tSiedbar ? <><div className="siedbarHomeLink__faContent"><i className="fa fa-chevron-down"></i></div> Zobacz więcej </>
+                            : <><div className="siedbarHomeLink__faContent"><i className="fa fa-chevron-up"></i></div> Pokaż mniej</>}</button>
 
             <hr />
 
-            <h3>Skróty</h3>
-            {shortcuts.map(shortcut => <SiedbarHomeLink src={shortcut.src} text={shortcut.text} />)}
+            <div className="shortcuts">
+                <div className="shortcuts__top">
+                    <h3>Skróty</h3>
+                </div>
+                {shortcuts.map((shortcut, index) => <SiedbarHomeLink key={index} src={shortcut.src} text={shortcut.text} />)}
+            </div>
+
+            <div className="SiedbarHomeLeft__navBottom">
+                <Link to={'/'} className="SiedbarHomeLeft__navBottomLink">
+                    Prywatność
+                </Link>
+                <Link to={'/'} className="SiedbarHomeLeft__navBottomLink">
+                    Regulamin
+                </Link>
+                <Link to={'/'} className="SiedbarHomeLeft__navBottomLink">
+                    Reklama
+                </Link>
+                <Link to={'/'} className="SiedbarHomeLeft__navBottomLink">
+                    Opcje Reklam
+                </Link>
+                <Link to={'/'} className="SiedbarHomeLeft__navBottomLink">
+                    Pliki cookie
+                </Link>
+                <button className="SiedbarHomeLeft__navBottomLink">
+                    Więcej
+                </button>
+                <p className="SiedbarHomeLeft__navBottomLink">Facebook clone © 2020</p>                
+            </div>
+
         </div>
     )   
 }

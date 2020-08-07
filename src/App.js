@@ -7,6 +7,8 @@ import {
   Route
 } from "react-router-dom";
 import SiedbarHomeLeft from './components/SiedbarHomeLeft';
+import SiedbarHomeCenter from './components/SiedbarHomeCenter';
+import SiedbarHomeRight from './components/SiedbarHomeRight';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
               <Switch>
                 <Route exact path="/">
                     <SiedbarHomeLeft />
+                    <SiedbarHomeCenter />
+                    <SiedbarHomeRight />
                 </Route>
                 <Route path="/friends">
                   friends
