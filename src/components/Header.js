@@ -28,7 +28,9 @@ const Header = () => {
                 </form>
             </div>
             <div className="header__nav">
-                <HeaderNavItem />
+                <div className="header__navContainer">
+                    <HeaderNavItem />
+                </div>   
             </div>
             <div className="header__options">
                 <div className="header__optionAvatar">

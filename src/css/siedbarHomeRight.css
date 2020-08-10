@@ -1,5 +1,6 @@
 .siedbarHomeRight {
-    flex: 0.2;
+    /* flex: 0.2; */
+    width: 320px !important;
     padding: 0 10px;
 }
 

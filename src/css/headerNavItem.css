@@ -12,11 +12,11 @@
     justify-content: center;
     align-items: center;
     transition: all ease-in-out;
+    margin-right: 4px;
 }
 
 .headerNavItem__link:hover{
     border-radius: 10px;
-    background-color: #3a3b3c;
 }
 
 .headerNavItem__link svg{

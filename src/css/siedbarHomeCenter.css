@@ -1,3 +1,4 @@
 .siedbarHomeCenter {
-    flex: 0.6;
+    /* flex: 0.6; */
+    width: calc(100% - 640px) !important;
 }
