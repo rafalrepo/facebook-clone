@@ -1,0 +1,147 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0;
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #242526;
+}
+
+.post__header {
+    display: flex;
+}
+
+.post__avatar {
+    margin-right: 10px;
+}
+
+.post__name {
+    margin-right: 10px;
+}
+
+.post__name h5{
+    font-size: 15px;
+    color: #b0b3b8;
+    font-weight: 600;
+}
+
+.post__name p{
+    font-size: 13px;
+    color: #b0b3b8;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.post__header button{
+    width: 62px;
+    height: 36px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    color: #b0b3b8;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.post__header button:hover{
+    background-color: #4e4f50;
+}
+
+.post__text {
+    font-size: 15px;
+    color: #b0b3b8;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.post__groupEmot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__emotikonImg {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    z-index: 3;
+}
+
+.post__emotikonImg:nth-child(2) {
+    transform: translateX(-3px);
+    z-index: 2;
+}
+
+.post__emotikonImg:nth-child(3) {
+    transform: translateX(-6px);
+    z-index: 1;
+}
+
+.post__emotikon {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #b0b3b8;
+}
+
+.post__comments {
+    font-size: 15px;
+    color: #b0b3b8;
+}
+
+.post hr {
+    margin-left: 0;
+    width: 100%;
+}
+
+.post__btn {
+    display: flex;
+    align-items: center;
+}
+
+.post__btn button{
+    width: 30%;
+    height: 38px;
+    border: 0;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    color: #b0b3b8;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.post__btn button:last-child {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.post__btn button:hover{
+    background-color: #3a3b3c;
+}
+
+.post__like {
+    background-image: url('../img/icon.png');
+    background-position: 0 -250px;
+    width: 18px;
+    height: 18px;
+}
+
+.post__comment {
+    background-image: url('../img/icon.png');
+    background-position: 0 -174px;
+    width: 18px;
+    height: 18px;
+}
+
+.post__avatarSmall {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.post__btn button i {
+    transform: translate(-3px, -2px);
+}

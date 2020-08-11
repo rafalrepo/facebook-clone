@@ -1,0 +1,53 @@
+.rooms {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0;
+    width: 500px;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #242526;
+}
+ 
+.rooms__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postCreated__room {
+    background-image: url('../img/icon.png');
+    background-position: 0 -33px;
+}
+
+.rooms__header h3 {
+    color: #e4e6eb;
+    flex: auto;
+}
+
+.rooms__header p {
+    color: #2e89ff
+}
+
+.rooms__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    position: relative;
+}
+
+.rooms__more {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3e4042;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px !important;
+    color: #797b7e !important;
+}
